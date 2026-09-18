@@ -19,16 +19,16 @@ namespace Exam_OOP_1
 
             } while (!Isvalid);
 
-            switch (choice)
+            switch (char.ToUpper( choice))
             {
-                case 'y':
+                case 'Y':
                     Stopwatch sw = new Stopwatch();
                     sw.Start();
                     subject.SubjectExam.ShowExam();
                     sw.Stop();
                     Console.WriteLine($"\n The  Time = {sw.Elapsed}");
                     break;
-                case 'n':
+                case 'N':
                     Console.WriteLine("Exam cancelled");
 
                     break;

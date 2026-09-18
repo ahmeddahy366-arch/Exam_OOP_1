@@ -137,14 +137,8 @@ namespace Exam_OOP_1
                     else if (questionType == 2) //MCQ
                     {
 
-                        int numberOfAnswers;
-                        do
-                        {
-                            Console.WriteLine($"Enter number of answers for question {i + 1}:");
-                            isvalid = int.TryParse(Console.ReadLine(), out numberOfAnswers) && numberOfAnswers >= 2;
-                            if (!isvalid)
-                            { Console.WriteLine("plase Enter number of answers greater 1"); }
-                        } while (!isvalid);
+                        int numberOfAnswers = 4;
+
                         Answer[] answerList = new Answer[numberOfAnswers];
                         for (int j = 0; j < numberOfAnswers; j++)
                         {
